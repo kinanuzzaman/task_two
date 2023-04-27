@@ -1,0 +1,230 @@
+li {
+  list-style: none;
+}
+
+a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+a:hover {
+  color: #022c6c;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.text-orange {
+  color: #fd7a04;
+}
+
+.text-blue {
+  color: #022c6c;
+}
+
+.text-gray {
+  color: #b3b3b3;
+}
+
+.text-dark {
+  color: #3f3c3d;
+}
+
+.shadow-y {
+  box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.1), 0 -6px 8px -6px rgba(0, 0, 0, 0.1);
+}
+
+.button1 {
+  border-radius: 30px;
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color: #022c6c;
+  color: #022c6c;
+}
+.button1:hover {
+  background-color: #022c6c;
+  color: #ffffff;
+}
+
+.hamberger {
+  display: none;
+}
+
+.logo {
+  width: 200px;
+  height: 80px;
+}
+
+.hero-img {
+  max-width: 700px;
+  max-height: 580px;
+}
+
+.build {
+  margin-top: 120px;
+}
+.build h2 {
+  letter-spacing: 2px;
+}
+.build p {
+  width: 400px;
+}
+
+.service {
+  margin: 180px 0 80px 0;
+}
+.service p {
+  padding: 0 420px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 200px;
+}
+.services div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+.services div img {
+  width: 100px;
+  height: 100px;
+}
+.services div p {
+  color: #b3b3b3;
+  padding: 30px;
+}
+.services div:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.passionate {
+  padding: 100px 0;
+}
+.passionate img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.portfolio {
+  margin-top: 200px;
+}
+.portfolio .quote {
+  margin-bottom: 80px;
+}
+.portfolio .quote p {
+  padding: 10px 300px;
+}
+.portfolio img {
+  width: 500px;
+  height: 480px;
+}
+.portfolio p {
+  padding-right: 100px;
+}
+
+.carousel-inner .carousel-item {
+  padding: 5% 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  border-color: gray;
+  margin: 2px;
+}
+
+@media screen and (max-width: 720px) {
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+  .build {
+    margin-top: 80px;
+  }
+  .build h2 {
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .build p {
+    width: 100%;
+    text-align: center;
+  }
+  .build div {
+    display: flex;
+    justify-content: center;
+  }
+  .service {
+    margin: 180px 0 80px 0;
+  }
+  .service p {
+    padding: 5px;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 200px;
+  }
+  .services div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+  }
+  .services div img {
+    width: 100px;
+    height: 100px;
+  }
+  .services div p {
+    color: #b3b3b3;
+    padding: 30px;
+  }
+  .services div:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .passionate {
+    padding: 100px 0;
+  }
+  .passionate img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .portfolio {
+    margin-top: 200px;
+  }
+  .portfolio .quote {
+    margin-bottom: 80px;
+  }
+  .portfolio .quote p {
+    padding: 10px;
+  }
+  .portfolio img {
+    width: 100%;
+    height: auto;
+  }
+  .portfolio p,
+  .portfolio h2 {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */

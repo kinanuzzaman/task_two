@@ -1,0 +1,268 @@
+@import "mixin";
+@import "var";
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $gray;
+    text-decoration: none;
+
+    &:hover {
+        color: $blue
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-dark {
+    color: $dark;
+}
+
+.shadow-y {
+    box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.1),
+        0 -6px 8px -6px rgba(0, 0, 0, 0.1);
+}
+
+.button1 {
+    @include button;
+    border-color: $blue;
+    color: $blue;
+
+    &:hover {
+        background-color: $blue;
+        color: $light;
+    }
+}
+
+.hamberger {
+    display: none
+}
+
+.logo {
+    width: 200px;
+    height: 80px;
+}
+
+.hero-img {
+    max-width: 700px;
+    max-height: 580px;
+}
+
+.build {
+    margin-top: 120px;
+
+    h2 {
+        letter-spacing: 2px;
+    }
+
+    p {
+        width: 400px;
+    }
+}
+
+.service {
+    margin: 180px 0 80px 0;
+
+    p {
+        padding: 0 420px;
+    }
+}
+
+.services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 200px;
+
+    div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            color: $gray;
+            padding: 30px;
+        }
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+    }
+
+}
+
+.passionate {
+    padding: 100px 0;
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+}
+
+.portfolio {
+    margin-top: 200px;
+
+    .quote {
+        margin-bottom: 80px;
+
+        p {
+            padding: 10px 300px;
+        }
+    }
+
+    img {
+        width: 500px;
+        height: 480px;
+    }
+
+    p {
+        padding-right: 100px;
+    }
+}
+
+// botstrap class
+
+.carousel-inner {
+    .carousel-item {
+        padding: 5% 15%;
+    }
+
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    border-color: gray;
+    margin: 2px;
+}
+
+// For tab & mobile screen
+@media screen and (max-width: 720px) {
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .build {
+        margin-top: 80px;
+
+        h2 {
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .service {
+        margin: 180px 0 80px 0;
+
+        p {
+            padding: 5px;
+        }
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        padding: 10px;
+        margin-bottom: 200px;
+
+        div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            p {
+                color: $gray;
+                padding: 30px;
+            }
+
+            &:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+            }
+        }
+
+    }
+
+    .passionate {
+        padding: 100px 0;
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+    }
+
+    .portfolio {
+        margin-top: 200px;
+
+        .quote {
+            margin-bottom: 80px;
+
+            p {
+                padding: 10px;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        p,
+        h2 {
+            padding: 10px;
+        }
+    }
+}
